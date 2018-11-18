@@ -97,14 +97,14 @@ def main():
         if toggle_wrapper[0] == 0:
             toggle_wrapper[0] = 1
             print(str(toggle_wrapper[0]))
-            #display_image.hide_image(top_wrapper, my_canvas_wrapper, label_wrapper)
+            display_image.hide_image(top_wrapper, my_canvas_wrapper, label_wrapper)
             display_graph.show_graph(top_wrapper, my_canvas_wrapper, label_wrapper, original_data)
 
         else:
             toggle_wrapper[0] = 0  # make it False
             print(str(toggle_wrapper[0]))
             display_graph.hide_graph(top_wrapper, my_canvas_wrapper, label_wrapper)
-            #display_image.show_image(top_wrapper, my_canvas_wrapper, label_wrapper)
+            display_image.show_image(top_wrapper, my_canvas_wrapper, label_wrapper)
 
     top = tk.Tk()
     top.title("this is a test")
